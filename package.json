@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe --concurrency 3 chrome practice.js --reporter allure",
+    "test": "testcafe chrome:headless --concurrency 3 practice.js --reporter allure",
     "test2": "testcafe chrome --concurrency 3 practice.js --reporter allure --screenshots path=allure/screenshots,takeOnFails=false",
     "test2:allure": "testcafe chrome allure/practice.js --reporter allure-expanded && allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report",
     "test:allure": "yarn test && allure serve allure/allure-results --clean -o allure/allure-report"
