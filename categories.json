@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Blocker Issues",
+    "message": "Failed blocker tests",
+    "matchedStatuses": ["failed"],
+    "matchedLabels": [
+      {"name": "severity", "value": "blocker"}
+    ]
+  },
+  {
+    "name": "Minor Issues",
+    "message": "Failed minor tests",
+    "matchedStatuses": ["failed"],
+    "matchedLabels": [
+      {"name": "severity", "value": "minor"}
+    ]
+  },
+  {
+    "name": "Skipped Tests",
+    "message": "Tests skipped during execution",
+    "matchedStatuses": ["skipped"]
+  }
+]
