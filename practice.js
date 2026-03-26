@@ -10,15 +10,15 @@ fixture("My Fixture")
 
 
 
-test.meta({
-  ID: '727',
-  SEVERITY: 'blocker',
-  STORY: '543',
-  TEST_RUN: 'are eita test run'
-}).skip("Google Test", async t => {
-  await t.navigateTo("https://www.google.com");
-  await t.expect(Selector("title").innerText).eql("Googgle");
-});
+// test.meta({
+//   ID: '727',
+//   SEVERITY: 'blocker',
+//   STORY: '543',
+//   TEST_RUN: 'are eita test run'
+// }).skip("Google Test", async t => {
+//   await t.navigateTo("https://www.google.com");
+//   await t.expect(Selector("title").innerText).eql("Googgle");
+// });
 
 
 test.meta({
@@ -69,7 +69,7 @@ test.meta({
   STORY: 'Jihad story',
 })("Test with meta", async t => {
   await t.navigateTo("https://www.example.com");
-  await t.expect(Selector("title").innerText).eql("Examples Domain");
+  await t.expect(Selector("title").innerText).eql("Example Domain");
 });
 
 
